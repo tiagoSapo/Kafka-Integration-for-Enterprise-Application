@@ -1,0 +1,11 @@
+Colocar o projeto em funcionamento:
+-> Criar no MySQL a base de dados 'meta3'
+-> Colocar os ficheiros de kafka-connect (sink e source) na diretoria config do kafka
+-> Ligar o zookeeper e o kafka-server
+-> Apagar topicos criados anteriormente
+-> Criar os topicos 'topicCredit', 'topicPayment', 'topicResult' e 'topicDB'
+-> Executar o bin/connect-standalone.sh para fazer a ligacao 'a base de dados, colocando o nome dos ficheiros sink e source
+-> No IDE no projeto 'ismeta3rest', fazer 'Run', para o SpringBoot + JPA poderem criar as tabelas para a BD
+-> No IDE no projeto 'ismeta3', fazer 'Run' sobre o ficheiro 'KafkaStreams.java'
+-> No IDE no projeto 'ismeta3', fazer 'Run' sobre o ficheiro 'KafkaClientManual.java' (produz um credito/pagamento para um cliente)
+-> No IDE no projeto 'ismeta3RestTest', fazer 'Run' para fazer o teste 'a camada REST para visualizar os resultados
